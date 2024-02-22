@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brivo</title>
+    <link rel="stylesheet" href="css/brivo.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font_awsome/fontawesome/css/all.min.css" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="slider/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="slider/owlcarousel/assets/owl.theme.default.min.css" />
+    <script src="slider/owlcarousel/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-branch" href="#">
+                    <img src="images/logo.png" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                   <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="oto.html">Ô tô</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tintuc.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="myhonda.html">My Honda+</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="LogIn.html">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="main">
+            <img src="images/brivo/1.jpg">
+            <img src="images/brivo/2.jpg">
+            <img src="images/brivo/3.jpg">
+            <img src="images/brivo/4.jpg">
+            <img src="images/brivo/5.jpg">
+            <img src="images/brivo/6.jpg">
+            <img src="images/brivo/7.jpg">
+            <img src="images/brivo/8.jpg">
+            <img src="images/brivo/9.jpg">
+            <br><br><br>
+            <img src="images/brivo/ts.jpg" class="ts">
+            <center>
+                <p><i>(*)Một số hình ảnh trong tài liệu này có thể hơi khác so với thực tế. Công ty Honda Việt Nam được quyền thay đổi bất kỳ đặc tính kỹ thuật nào mà không cần báo trước.</i></p>
+            </center>
+            <form class="ff">
+                <button type="button" class="one"><a href="laithu.html">Lái thử</a></button>
+                <button type="button" class="two"><a href="dutoan.html">Dự toán chi phí</a></button>
+            </form>
+        </div>
+        <br><br><br><br><br><br>
+        </div>
+        <footer class="footer">
+            <p><b>Công ty Honda Việt Nam</b></p>
+            <p>Số GCNĐKDN: 2500150543</p>
+            <p>Đăng ký lần đầu: Ngày 26/6/2008</p>
+            <p>Đăng ký thay đổi lần thứ 10: Ngày 1/4/2019.</p>
+            <p>Cơ quan cấp: Phòng Đăng ký kinh doanh – Sở Kế hoạch và Đầu tư Vĩnh Phúc</p>
+            <p>Địa chỉ: Phường Phúc Thắng, Thành Phố Phúc Yên, Tỉnh Vĩnh Phúc, Việt Nam</p>
+            <center>© 2019. Copyright by Honda VietNam</center>
+            <form>
+                <p><b>Đăng ký nhận tin về Honda</b></p>
+                <input type="text" placeholder="Họ tên..."><br>
+                <input type="text" placeholder="Email..."><br>
+                <button type="button">Đăng ký</button>
+            </form>
+            <div class="dd">
+                <p><b>ĐƯỜNG DÂY NÓNG</b></p>
+                <p>Hotline:
+                    <font style="color: red;">1800 8001</font> (Miễn phí cho tất cả thuê bao)</p>
+                <p>Email:
+                    <font style="color: red;"><u>cr@honda.com.vn</u></font>
+                </p>
+            </div>
+        </footer>
+    </header>
+    <script type="text/javascript">
+        $().ready(function() {
+            $(window).scroll(function() {
+                var top = $(this).scrollTop();
+                if (top > 100) {
+                    $("#top").fadeIn('slow');
+                } else {
+                    $("#top").fadeOut('slow');
+                }
+            });
+            $("#top").click(function() {
+                $("body").animate({
+                    scrollTop: 0
+                }, 1000);
+            });
+        });
+    </script>
+    <style type="text/css">
+        #top {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            display: none;
+        }
+    </style>
+    <a href="#" id="top"><img src="unnamed.png" width="80px" /></a>
+</body>
+
+</html>
